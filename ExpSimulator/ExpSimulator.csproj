@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\ClassDefineHallData.cs" />
+    <Compile Include="Models\ClassDefineModelBaseData.cs" />
     <Compile Include="Views\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,7 +88,6 @@
     <Folder Include="Controller\" />
     <Folder Include="DataSheets\1.調査\" />
     <Folder Include="DataSheets\2.構造設計\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
