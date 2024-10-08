@@ -1,0 +1,34 @@
+@startuml
+
+hide empty members
+left to right direction
+
+class "ホールデータ" #back:FFFFF0;line.bold:000000
+{
+    +ホール名 : string
+}
+class "機種データ" #back:FFFFF0;line.bold:000000
+{
+    +機種名 : string
+    +設置台数 : int
+}
+class "台データ" #back:FFFFF0;line.bold:000000
+{
+    +台番号 : string
+}
+class "デイリーデータ" #back:FFFFF0;line.bold:000000
+{
+    +日付 : DateTime
+}
+class "履歴データ" #back:FFFFF0;line.bold:000000
+{
+    +回転数 : int
+    +大当り種別 : int
+}
+
+"ホールデータ" "1" *-- "1..n" "機種データ"
+"機種データ" "1" *-- "1..n" "台データ"
+"台データ" "1" *-- "1..n" "デイリーデータ"
+"デイリーデータ" "1" *-- "1..n" "履歴データ"
+
+@enduml

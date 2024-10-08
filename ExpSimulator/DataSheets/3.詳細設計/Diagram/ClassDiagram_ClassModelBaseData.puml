@@ -1,0 +1,31 @@
+@startuml
+
+hide empty members
+
+class "機種基盤データ" #back:FFFFF0;line.bold:000000
+{
+    +機種名 : string
+    +メーカー : string
+    +導入開始日 : DateTime
+}
+class "機種性能データ" #back:FFFFF0;line.bold:000000
+{
+    +初当り確率 : double
+    +確変当り確率 : double
+    +確変突入率 : double
+    +確変継続率 : double
+    +ST : int
+    +時短回数 : int
+    +CT : int
+}
+class "機種補足データ" #back:FFFFF0;line.bold:000000
+{
+    +ボーダー : double
+    +ランキング : int
+    +備考 : string
+}
+
+"機種基盤データ" "1" *-- "1" "機種性能データ"
+"機種基盤データ" "1" *-- "1" "機種補足データ"
+
+@enduml
