@@ -12,6 +12,11 @@ namespace ExpSimulator.Models
         /// 機種名
         /// </summary>
         internal string ModelName { get; set; }
+        
+        /// <summary>
+        /// 機種タイプ
+        /// </summary>
+        internal string ModelType { get; set; }
 
         /// <summary>
         /// メーカー

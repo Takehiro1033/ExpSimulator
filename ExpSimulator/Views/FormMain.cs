@@ -1,4 +1,5 @@
-﻿using ExpSimulator.Models;
+﻿using ExpSimulator.Controller;
+using ExpSimulator.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,10 @@ namespace ExpSimulator
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            //デバッグ用
+            ClassRegistModelBaseData RegistModelBaseData = new ClassRegistModelBaseData();
 
+            RegistModelBaseData.RegistModelBaseData();
         }
     }
 }

@@ -5,6 +5,7 @@ hide empty members
 class "機種基盤データ" #back:FFFFF0;line.bold:000000
 {
     +機種名 : string
+    +機種タイプ : string
     +メーカー : string
     +導入開始日 : DateTime
 }
